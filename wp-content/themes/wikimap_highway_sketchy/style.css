@@ -1,0 +1,685 @@
+/*  
+Theme Name: WikiMap highway (sketchy)
+Theme URI: http://wikimap.sourceforge.org
+Description: Theme for WikiMap plugin. Shows a web 2.0 map in the header. 
+Version: 1.0
+Author: Robert Buzink
+Author URI: http://robertbuzink.nl
+
+	WikiMap 1.0
+	http://wikimap.sourceforge.org
+
+	This theme was designed and built by Robert Buzink,
+	whose blog you will find at http://robertbuzibk.nl/
+
+	The CSS, XHTML and design is released under GPL:
+	http://www.opensource.org/licenses/gpl-license.php
+
+based on:
+
+Theme-Name: Highway Tunnel Bull
+Theme-URI: http://www.pixel-inc.net/rosag2/
+Theme-Description: Highway Tunnel Bull
+Theme-Version: 1.0
+Theme-Author: RosaG2 & Pixel-Inc
+Theme-Author-URI: http://www.pixel-inc.net/rosag2/
+
+	*** COMENTARIOS ***
+	Bienvenido a la p�gina oficial del theme �Highway Tunnel Bull� creado para WordPress. 
+	El template sigue, lo mejor posible, los consejos sobre la estandarizaci�n web. 
+	Su c�digo es v�lido como XHTML 1.0 Transitional y su CSS tambi�n es completamente v�lida seg�n la w3c.
+
+
+*/
+
+			
+#map {
+       width:606px;
+       height:291px;
+	   position:relative;
+	   left:72px;
+	   top:26px;
+	   background-color:#F1FBFF;
+     }
+
+#loginlink {
+	 position: absolute;
+	 right: 20px;
+	 top: 2px;
+	 text-align: right;
+         font-size: 62.5%; /* Resets 1em to 10px */
+	 font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	   }           
+
+#loginlink li, #loginlink li a {
+         list-style-type: none;
+         display: inline;
+         text-decoration: none;
+         color: #fff;
+                    }
+#title {
+        text-align: left; position: absolute; LEFT: 2px; TOP: 0px; z-index: 1000; color: #c3def1; font-size: small;
+       }
+#iClose {
+        text-align: right;
+	  position: absolute;
+        right: 27px;
+        TOP: 30px;
+        z-index: 1001;
+        color: #c3def1;
+	  font-size: small; 
+        }
+
+#iClose, #iClose a {
+	     		  color: #c3def1;
+	     		  text-decoration: none;
+	    		 }
+
+#wmtitle {
+         position: relative;
+	   top: -20px;
+         }
+
+#wmcontent {
+         position: relative;
+	   top: -30px;
+         margin-right: 10px;
+         }
+
+/*  
+Theme Name: Openlayers highway
+Theme URI: http://robertbuzink.nl
+Description: Basic web 2.0 openlayers map in header
+Version: 1.0
+Author: Robert Buzink
+Author URI: http://robertbuzink.nl
+
+	
+*/
+
+
+/* Tipografia ************************************************** */
+body {
+	font-size: 62.5%; /* Resets 1em to 10px */
+	background-color: #F1FBFF;
+	text-align: center;
+	font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	color: #333;
+	}
+
+#page {
+	background-color: white;
+	border: 1px solid #959596;
+	text-align: left;
+	}
+
+#header {
+	background-color: #829299;
+	}
+
+#content {
+	font-size: 1.2em
+	}
+
+#footer {
+	background-color: #F6DE7C;
+	}
+
+.widecolumn .entry p {
+	font-size: 1.05em;
+	}
+
+.narrowcolumn .entry, .widecolumn .entry {
+	line-height: 1.4em;
+	}
+
+.widecolumn {
+	line-height: 1.6em;
+	}
+	
+.narrowcolumn .postmetadata {
+	text-align: center;
+	}
+
+.alt {
+	background-color: #f8f8f8;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	}
+
+small {
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size: 0.9em;
+	line-height: 1.5em;
+	}
+
+h1, h2, h3 {
+	font-family: 'Trebuchet MS', 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	font-weight: bold;
+	}
+
+h1 	{ font-size: 4em; text-align: center; }
+h2 	{ font-size: 1.6em; }
+h3 	{ font-size: 1.3em; }
+
+h1, h1 a, h1 a:hover, h1 a:visited {
+	text-decoration: none;
+	color: white;
+	}
+
+h2, h2 a, h2 a:visited, h3, h3 a, h3 a:visited {
+	color: #6B6632;
+	}
+
+h2, h2 a, h2 a:hover, h2 a:visited, h3, h3 a, h3 a:hover, h3 a:visited, #sidebar h2, #wp-calendar caption, cite {
+	text-decoration: none;
+	}
+
+h2 a:hover, h3 a:hover {
+	color: #fff;
+	text-decoration: none;
+	}
+
+#sidebar h2 { font-size: 1.2em; }
+
+#headerimg .description {
+	font-family: 'Trebuchet MS', 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	font-size: 1.3em;
+	font-weight: bold;
+	text-decoration: none;
+	color: #829299;
+	text-align: left;
+}
+
+.entry p a:visited {
+	color: #405761;
+	}
+
+.commentlist li, #commentform input, #commentform textarea {
+	font: 0.9em 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	}
+	
+.commentlist li {
+	font-weight: bold;
+	}
+
+.commentlist cite, .commentlist cite a {
+	font-weight: bold;
+	font-style: normal;
+	font-size: 1.1em;
+	}
+
+.commentlist p {
+	font-weight: normal;
+	line-height: 1.5em;
+	text-transform: none;
+	}
+
+#commentform p {
+	font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	}
+
+.commentmetadata {
+	font-weight: normal;
+	}
+
+#sidebar { font: 1em 'Lucida Grande', Verdana, Arial, Sans-Serif; }
+
+small, #sidebar ul ul li, #sidebar ul ol li, .nocomments, .postmetadata, blockquote, strike {
+	color: #405761; 
+	}
+	
+code 	{ font: 1.1em 'Courier New', Courier, Fixed; }
+
+acronym, abbr, span.caps {
+	font-size: 0.9em;
+	letter-spacing: .07em;
+	}
+
+a 	{ color: #405761; text-decoration: none; }
+a:hover { color: #147; text-decoration: underline; }
+	
+#wp-calendar #prev a 	{ font-size: 9pt; }
+#wp-calendar a 		{ text-decoration: none; }
+#wp-calendar caption 	{ font: bold 1.3em 'Lucida Grande', Verdana, Arial, Sans-Serif; text-align: center; }
+#wp-calendar th 	{ font-style: normal; text-transform: capitalize; }
+
+/* End Tipografia ************************************************** */
+
+
+
+/* Estructura ************************************************** */
+body {
+	margin: 0;
+	padding: 0; 
+	}
+
+#page {
+	background-color: white;
+	margin: 0 auto;
+	padding: 0;
+	width: 760px;
+	border: 1px solid #959596;
+	}
+	
+#header {
+	padding: 0;
+	margin: 0 auto;
+	height: 400px;
+	width: 100%;
+	background-color: #73a0c5;
+	}
+
+#headerimg {
+	margin: 0;
+	height: 400px;
+	width: 100%;
+	}
+
+#cuerpo {
+	padding: 0 0 0 1px;
+	margin: 0 auto;
+	width: 100%;
+}
+html>body #cuerpo {padding: 0;}
+
+#footer {
+	padding: 0 0 0 1px;
+	margin: 0 auto;
+	width: 100%;
+	clear: both;
+}
+html>body #footer {padding: 0;}
+
+.narrowcolumn {
+	float: left;
+	padding: 0 0 20px 45px;
+	margin: 0px 0 0;
+	width: 470px;
+	}
+
+.widecolumn {
+	float: left;
+	padding: 0 0 20px 45px;
+	margin: 0px 0 0;
+	width: 470px; 
+	}
+
+#sidebar {
+	padding: 40px 0 10px 0; 
+	margin-left: 580px;
+	width: 150px;
+	}
+
+#sidebar form {
+	margin: 0;
+	}
+
+.post {
+	margin: 0 0 30px;
+	text-align: justify;
+	}
+
+.post img{
+	margin-right: 6px;
+	}
+
+.widecolumn .post {
+	margin: 0;
+	}
+
+.narrowcolumn .postmetadata {
+	padding-top: 5px;
+	}
+
+.widecolumn .postmetadata {
+	margin: 30px 0;
+	}
+
+.widecolumn .smallattachment {
+	text-align: center;
+	float: left;
+	width: 128px;
+	margin: 5px 5px 5px 0px;
+}
+
+.widecolumn .attachment {
+	text-align: center;
+	margin: 5px 0px;
+}
+
+.postmetadata {
+	clear: left;
+}
+
+#footer p {
+	margin: 0 0 0 50px;
+	padding: 20px 0;
+	text-align: left;
+	}
+
+/* Fin Estructura ************************************************** */
+
+
+/* Cabeceras ************************************************** */
+#headerimg h1 {
+	font-size: 4.5em;
+	text-align: left;
+	padding-top: 37px;
+	margin: 0;
+	line-height: 1em;
+      color: #FF9600;
+	}
+
+#headerimg h1 a {
+	color: #FFBD24;
+	}
+
+h2 {
+	margin: 30px 0 0;
+	}
+
+h2.pagetitle {
+	margin-top: 20px;
+	text-align: left;
+	background: url(images/toro_ico.gif) no-repeat left top; 
+	padding-left: 30px; 
+	}
+
+#sidebar h2 {
+	margin: 5px 0 0;
+	padding: 0;
+	}
+
+h3 {
+	padding: 0;
+	margin: 30px 0 0;
+	}
+
+h3.comments {
+	padding: 0;
+	margin: 40px auto 20px ;
+	}
+
+/* Fin Cabeceras ************************************************** */
+
+
+/* Imagenes ************************************************** */
+p img {
+	padding: 0;
+	max-width: 100%;
+	}
+	
+img.centered {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	}
+	
+img.alignright {
+	padding: 4px;
+	margin: 0 0 2px 7px;
+	display: inline;
+	}
+
+img.alignleft {
+	padding: 4px;
+	margin: 0 7px 2px 0;
+	display: inline;
+	}
+
+.alignright {
+	float: right;
+	}
+	
+.alignleft {
+	float: left
+	}
+
+/* Fin imagenes ************************************************** */
+
+
+/* Listas ************************************************** */
+html>body .entry ul {
+	margin-left: 0px;
+	padding: 0 0 0 30px;
+	list-style: none;
+	padding-left: 10px;
+	text-indent: -10px;
+	} 
+
+html>body .entry li {
+	margin: 7px 0 8px 10px;
+	}
+
+.entry ul li:before, #sidebar ul ul li:before {
+	content: "\00BB \0020";
+	}
+
+.entry ol {
+	padding: 0 0 0 35px;
+	margin: 0;
+	}
+
+.entry ol li {
+	margin: 0;
+	padding: 0;
+	}
+
+.postmetadata ul, .postmetadata li {
+	display: inline;
+	list-style-type: none;
+	list-style-image: none;
+	}
+	
+#sidebar ul, #sidebar ul ol {
+	margin: 0;
+	padding: 0;
+	}
+
+#sidebar ul li {
+	list-style-type: none;
+	list-style-image: none;
+	margin-bottom: 15px;
+	}
+
+#sidebar ul p, #sidebar ul select {
+	margin: 5px 0 8px;
+	}
+
+#sidebar ul ul, #sidebar ul ol {
+	margin: 5px 0 0 10px;
+	}
+
+#sidebar ul ul ul, #sidebar ul ol {
+	margin: 0 0 0 10px;
+	}
+
+ol li, #sidebar ul ol li {
+	list-style: decimal outside;
+	}
+
+#sidebar ul ul li, #sidebar ul ol li {
+	margin: 3px 0 0;
+	padding: 0;
+	}
+
+/* Fin listas ************************************************** */
+
+
+/* Formularios ************************************************** */
+#searchform {
+	margin: 10px auto;
+	padding: 3px 3px; 
+	text-align: left;
+}
+
+#sidebar #searchform #s {
+	width: 125px;
+	padding: 2px;
+	}
+
+#sidebar #searchsubmit {
+	padding: 1px;
+	}
+
+.entry form { /* This is mainly for password protected posts, makes them look better. */
+	text-align:center;
+	}
+
+select {
+	width: 130px;
+	}
+
+#commentform input {
+	/* width: 100px; */
+	padding: 2px;
+	margin: 5px 1px;
+	}
+
+#commentform textarea {
+	width: 100%;
+	padding: 2px;
+	}
+
+#commentform #submit {
+	margin: 0;
+	float: right;
+	}
+
+form 		{margin-top: -5px;}
+input,
+textarea,
+select 		{border:2px solid #7C8D94; background:#F1FBFF; color:#000; margin:2px; }
+input,
+textarea 	{padding:0 2px}
+fieldset 	{border:2px solid #7C8D94; padding:8px; }
+
+/* Fin Formularios ************************************************** */
+
+/* Comentarios ************************************************** */
+.alt {
+	margin: 0;
+	padding: 10px;
+	}
+
+.commentlist {
+	padding: 0;
+	text-align: justify;
+	}
+
+.commentlist li {
+	margin: 15px 0 3px;
+	padding: 5px 10px 3px;
+	list-style: none;
+	}
+
+.commentlist p {
+	margin: 10px 5px 10px 0;
+	}
+
+#commentform p {
+	margin: 5px 0;
+	}
+
+.nocomments {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	}
+
+.commentmetadata {
+	margin: 0;
+	display: block;
+	}
+/* Fin Comentarios ************************************************** */
+
+/* Calendario ************************************************** */
+#wp-calendar {
+	empty-cells: show;
+	margin: 10px 0;
+	width: 150px;
+	}
+
+#wp-calendar #next a {
+	padding-right: 10px;
+	text-align: right;
+	}
+
+#wp-calendar #prev a {
+	padding-left: 10px;
+	text-align: left;
+	}
+
+#wp-calendar a {
+	display: block;
+	}
+
+#wp-calendar caption {
+	text-align: center;
+	width: 100%;
+	}
+
+#wp-calendar td {
+	padding: 0;
+	text-align: left;
+	}
+
+#wp-calendar td.pad:hover { /* Doesn't work in IE */
+	background-color: #fff; }
+
+/* Fin Calendario ************************************************** */
+
+/* Varios ************************************************** */
+acronym, abbr, span.caps {
+	cursor: help;
+	}
+
+acronym, abbr {
+	border-bottom: 1px dashed #999;
+	}
+
+blockquote {
+	margin: 15px 30px 0 10px;
+	padding-left: 20px;
+	border-left: 8px solid #779192;
+}
+
+blockquote cite {
+	margin: 5px 0 0;
+	display: block;
+	}
+
+.center {
+	text-align: center;
+	}
+
+hr {
+	display: none;
+	}
+
+a img {
+	border: none;
+	}
+
+.navigation {
+	display: block;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 60px;
+
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size: 0.9em;
+	line-height: 1.5em;
+	}
+
+/* Fin Varios ************************************************** */
+
+#ajaxResults{
+background-color:#F6DE7C;
+margin:3px;
+border:1px solid #D9BE29;
+}
+.more a{
+color:#7C8D94;
+}
